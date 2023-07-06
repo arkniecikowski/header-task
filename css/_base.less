@@ -6,11 +6,37 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: @primary-color; 
+    margin:0px;
   }
 
-  @media only screen and (min-width: @sm) {
-    body {
-      margin: 0 80px;
-    }
+  .top-container {
+    margin: 0 10px; 
   }
+  
+  .container {
+    margin:0;
+    border-bottom: 1px solid @line-color;
+  }
+
+  @media only screen and (min-width: @xs) {
+    .top-container {
+    margin: 0 80px; 
+  }
+  }
+  @media only screen and (min-width: @sm) {
+    .top-container {
+    margin: 0 100px; 
+  }
+  }
+  @media only screen and (min-width: @md) {
+    .top-container {
+    margin: 0 120px; 
+  }
+  }
+  @media only screen and (min-width: @lg) {
+    .top-container {
+    margin: 0 140px; 
+  }
+  }
+ 
  

@@ -3,17 +3,40 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #000000;
+  margin: 0px;
+}
+.top-container {
+  margin: 0 10px;
+}
+.container {
+  margin: 0px;
+  border-bottom: 1px solid #d7d7d7;
+}
+@media only screen and (min-width: 600px) {
+  .top-container {
+    margin: 0 80px;
+  }
 }
 @media only screen and (min-width: 768px) {
-  body {
-    margin: 0 80px;
+  .top-container {
+    margin: 0 100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .top-container {
+    margin: 0 120px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .top-container {
+    margin: 0 140px;
   }
 }
 .top-container {
   font-size: 13px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0;
 }
 .contact-container {
   display: flex;
@@ -57,15 +80,18 @@ body {
   .top-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
   }
   .top-container > div > div {
     padding: 5px;
   }
+  .user-container {
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+  }
+  .user-login-container {
+    border-right: 1px solid #d7d7d7;
+  }
   .contact-container {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    order: 1;
   }
 }
