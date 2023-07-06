@@ -1,43 +1,100 @@
-@import "../_variables.less"; 
+@import "../_variables.less";
 
 .middle-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25px 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-   
+
+.middle-container>div {
+  margin: 25px 10px;
+}
+
 .main-logo-container,
 .shopping-cart-container {
-    display: flex;
-    align-items: center; 
-    margin-top:10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-.main-logo-icon { 
-    width:184px;
-    height:64px;
-    background-image: url(../img/top-container-images/main-logo.svg);
-    background-size: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.main-logo-icon {
+  width: 184px;
+  height: 64px;
+  background-image: url(../img/top-container-images/main-logo.svg);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .shopping-cart-icon {
-    width:27px;
-    height:32px;
-    background-image: url(../img/top-container-images/basket-icon.svg);
-    background-size: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 27px;
+  height: 32px;
+  background-image: url(../img/top-container-images/basket-icon.svg);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-  @media screen and (min-width: @xs) {
-    .middle-container {
-        flex-direction: row;
-    }
-    .main-logo-icon {
-        background-size: 150px;
-    }
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica';
+}
+
+.search-bar-container input {
+  border: none;
+  border-bottom: 2px solid #191919;
+  outline: none;
+  padding-right: 30px;
+  width: 200px;
+}
+
+.search-bar-container button {
+  background: url(../img/top-container-images/search-icon.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+
+.search-bar-container img {
+  width: 20px;
+}
+
+
+@media screen and (min-width: @xs) {
+  .middle-container {
+    flex-direction: row;
   }
+
+  .search-bar-container input {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: @sm) {
+  .search-bar-container input {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: @md) {
+  .search-bar-container input {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: @lg) {
+  .search-bar-container input {
+    width: 400px;
+  }
+}

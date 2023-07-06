@@ -1,10 +1,15 @@
-@import "_variables.less";  
+@import "_variables.less";
 
-.top-container > div > div > div {
+.top-container>div>div>div {
     transition: all 0.1s ease;
 }
 
-.top-container > div > div > div:hover {
+.top-container>div>div>div:hover {
+    transform: scale(1.02);
+    color: @hover-color;
+}
+
+.bottom-container>nav>ul>li>a:hover {
     transform: scale(1.02);
     color: @hover-color;
 }

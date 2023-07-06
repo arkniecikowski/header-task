@@ -10,33 +10,13 @@ body {
 }
 @media only screen and (min-width: 600px) {
   .top-container,
-  .middle-container {
+  .middle-container,
+  .bottom-container {
     margin-left: 80px;
     margin-right: 80px;
   }
   .bottom-line {
     border-bottom: 1px solid #d7d7d7;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .top-container,
-  .middle-container {
-    margin-left: 120px;
-    margin-right: 120px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .top-container,
-  .middle-container {
-    margin-left: 140px;
-    margin-right: 140px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .top-container,
-  .middle-container {
-    margin-left: 160px;
-    margin-right: 160px;
   }
 }
 .top-container > div > div > div {
@@ -46,8 +26,13 @@ body {
   transform: scale(1.02);
   color: #ecc7d0;
 }
+.bottom-container > nav > ul > li > a:hover {
+  transform: scale(1.02);
+  color: #ecc7d0;
+}
 .top-container {
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -95,6 +80,7 @@ body {
 }
 @media only screen and (min-width: 600px) {
   .top-container {
+    font-size: 14px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -120,6 +106,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.middle-container > div {
   margin: 25px 10px;
 }
 .main-logo-container,
@@ -127,12 +115,13 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  font-weight: bold;
 }
 .main-logo-icon {
   width: 184px;
   height: 64px;
   background-image: url(../img/top-container-images/main-logo.svg);
-  background-size: 100px;
+  background-size: 150px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -144,11 +133,116 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica';
+}
+.search-bar-container input {
+  border: none;
+  border-bottom: 2px solid #191919;
+  outline: none;
+  padding-right: 30px;
+  width: 200px;
+}
+.search-bar-container button {
+  background: url(../img/top-container-images/search-icon.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.search-bar-container img {
+  width: 20px;
+}
 @media screen and (min-width: 600px) {
   .middle-container {
     flex-direction: row;
   }
-  .main-logo-icon {
-    background-size: 150px;
+  .search-bar-container input {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .search-bar-container input {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .search-bar-container input {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .search-bar-container input {
+    width: 400px;
+  }
+}
+.bottom-container {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  list-style: none;
+}
+.menu-container {
+  width: 100%;
+  padding: 0;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  background: #ecc7d0;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+a:hover {
+  background: #000000;
+}
+@media only screen and (min-width: 600px) {
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+    flex: 1 0 20%;
+  }
+  a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background: none;
+    color: #000000;
+    font-weight: 400;
+  }
+  a:hover {
+    background: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu li {
+    flex: 1;
   }
 }

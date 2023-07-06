@@ -1,26 +1,26 @@
-@import "../_variables.less";  
+@import "../_variables.less";
 
 .top-container {
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    // margin: 0 10px; 
-  }
-
-.contact-container  {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}   
-
-.user-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
-.user-container > div {
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user-container>div {
   margin: 0 25px;
 }
 
@@ -28,63 +28,64 @@
 .contact-email-container,
 .user-login-container,
 .user-registration-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .contact-number-icon,
-  .contact-email-icon,
-  .user-login-icon,
-  .user-registration-icon {
-    width: 13px;
-    height: 13px;
-    background-size: cover;
-    margin-right: 5px;
-  }
-  
-  .contact-number-icon {
-    background-image: url(../img/top-container-images/phone-icon.svg);
-  }
-  
-  .contact-email-icon {
-    background-image: url(../img/top-container-images/email-icon.svg);
-  }
-  
-  .user-login-icon {
-    background-image: url(../img/top-container-images/login-icon.svg);
-  }
-  
-  .user-registration-icon {
-    background-image: url(../img/top-container-images/registration-icon.svg);
-  }
+  display: flex;
+  align-items: center;
+}
 
- 
+.contact-number-icon,
+.contact-email-icon,
+.user-login-icon,
+.user-registration-icon {
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.contact-number-icon {
+  background-image: url(../img/top-container-images/phone-icon.svg);
+}
+
+.contact-email-icon {
+  background-image: url(../img/top-container-images/email-icon.svg);
+}
+
+.user-login-icon {
+  background-image: url(../img/top-container-images/login-icon.svg);
+}
+
+.user-registration-icon {
+  background-image: url(../img/top-container-images/registration-icon.svg);
+}
+
+
 
 @media only screen and (min-width: @xs) {
-    .top-container {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+  .top-container {
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .top-container > div > div {
-        padding:5px;
-    }
+  .top-container>div>div {
+    padding: 5px;
+  }
 
-    .user-container {
-        border-left: 1px solid @line-color;
-        border-right: 1px solid @line-color;
-    }
+  .user-container {
+    border-left: 1px solid @line-color;
+    border-right: 1px solid @line-color;
+  }
 
-    .user-container > div {
-      margin: 0 0;
-    }
-    
-    .user-login-container {
-        border-right: 1px solid @line-color;
-    }
+  .user-container>div {
+    margin: 0 0;
+  }
 
-      .contact-container {
-        flex-direction: row; 
-      }
- 
+  .user-login-container {
+    border-right: 1px solid @line-color;
+  }
+
+  .contact-container {
+    flex-direction: row;
+  }
+
 }
