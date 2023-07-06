@@ -4,34 +4,68 @@ body {
   line-height: 1.5;
   color: #000000;
 }
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 80px;
+  }
+}
 .top-container {
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #f2f2f2;
 }
-.contact-container,
-.user-container {
+.contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact-number-container,
+.contact-email-container,
+.user-login-container,
+.user-registration-container {
+  display: flex;
+  align-items: center;
+}
+.contact-number-icon,
+.contact-email-icon,
+.user-login-icon,
+.user-registration-icon {
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+  margin-right: 5px;
+}
+.contact-number-icon {
+  background-image: url(../img/top-container-images/phone-icon.svg);
+}
+.contact-email-icon {
+  background-image: url(../img/top-container-images/email-icon.svg);
+}
+.user-login-icon {
+  background-image: url(../img/top-container-images/login-icon.svg);
+}
+.user-registration-icon {
+  background-image: url(../img/top-container-images/registration-icon.svg);
 }
 @media only screen and (min-width: 600px) {
   .top-container {
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
+  }
+  .top-container > div > div {
+    padding: 5px;
   }
   .contact-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     order: 1;
-  }
-  .user-container {
-    justify-content: flex-end;
-    order: 3;
-  }
-  .mail {
-    margin-left: 20px;
   }
 }
