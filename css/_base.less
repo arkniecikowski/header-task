@@ -8,34 +8,45 @@ body {
     color: @primary-color; 
     margin:0px;
   }
-
-  .top-container {
-    margin: 0 10px; 
-  }
+ 
   
   .container {
+    // display: flex;
+    // flex-direction: column;
     margin:0;
-    border-bottom: 1px solid @line-color;
+    // border-bottom: 1px solid @line-color;
   }
 
+
   @media only screen and (min-width: @xs) {
-    .top-container {
-    margin: 0 80px; 
+  .top-container,
+  .middle-container  {
+    margin-left: 80px;
+    margin-right: 80px; 
+  }
+  .bottom-line {
+    border-bottom: 1px solid @line-color;
   }
   }
   @media only screen and (min-width: @sm) {
-    .top-container {
-    margin: 0 100px; 
+    .top-container,
+    .middle-container  {
+      margin-left: 120px;
+      margin-right: 120px; 
   }
   }
   @media only screen and (min-width: @md) {
-    .top-container {
-    margin: 0 120px; 
+    .top-container,
+    .middle-container  {
+    margin-left: 140px;
+    margin-right: 140px; 
   }
   }
   @media only screen and (min-width: @lg) {
-    .top-container {
-    margin: 0 140px; 
+    .top-container,
+    .middle-container  {
+      margin-left: 160px;
+      margin-right: 160px; 
   }
   }
  

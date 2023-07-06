@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    // margin: 0 10px; 
   }
 
 .contact-container  {
@@ -16,7 +17,11 @@
 .user-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.user-container > div {
+  margin: 0 25px;
 }
 
 .contact-number-container,
@@ -69,6 +74,11 @@
         border-left: 1px solid @line-color;
         border-right: 1px solid @line-color;
     }
+
+    .user-container > div {
+      margin: 0 0;
+    }
+    
     .user-login-container {
         border-right: 1px solid @line-color;
     }

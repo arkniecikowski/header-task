@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147 63" width="130" height="50">
+	<title>Shape 2 copy 3</title>
+	<defs>
+		<image aria-label="Aurora"  width="147" height="44" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAAAsBAMAAACTV5eGAAAAAXNSR0IB2cksfwAAADBQTFRFGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZVznDpwAAABB0Uk5TABF33f9m7lUiu0QzqsyImTbLX78AAAOSSURBVHicrVZPSBRRGP9mYNjZHXNFgpBanXKwCCui7VB6SPdzTHNdq0XwltuIlZF7EA+dNoiiQLDcgo0OW4QHTwuJECEk2THIWCQQw8pbBApLhwjqe2/+rUpizLzDzDe/ee83v/f9ed8A/HtUR3u2efs/o9rAS/4wBYwTeMYXJjmbCuK4L1QNHRkN834w3dNVxejyg0k0lmAX9vvAJMx3A6xi2geqST0PAUz4wFSJcwB38Lh3JrnYStciFrxT9cYKTFmrd6Y6tj1I+pCfSjHFroZe5ZmqN858FMFOz0zm9qCEqlcmhUcPJOzwymRGD2DGe9FY2xOKng8FMzkBwt6TalQ3xSTxjUcmERf4XTFiHpNKyHabRgTPeRT1UreaVQk9dq2A0WQakueTSuuwHDRtuWzDaNwRROP+1PNGTB3N8WEg6iubJtTgljVbobvH2Fp7XM3lihjP5dbYq9qYc/plMWWboWzTJkg+guzTrxiBnnu4qt+c4hukTLckkUXuP89MiSapHFSMU7eaN0JCST84oKmQzX09/IzNsHwOFRi3rAjSmRVJmOs+jphV2YsfILcRasBP8NjNxN64bWp4xRK1SOUjFNuZHR6A3fwAExEzcGMDVEMBl3HIZqp0ghZAu/1FFnGNNPIU+1mAEpdQwmEIdZZDikHTgk4mCvMJW9QMWikvfI6S0hLfX3iI5Kh8z23tEBwvh0ZZ6WvdtqgxXLNJi+QLk7OPGqFoviAFScapUCAGYSRfBpH3e+hi9xTFcEgrUM+YWJOmW7OZAol7YJIU/Nh7vRxaZaKSjtOTbs1pdnvoe41t9A32NWE5A0kWFmmRDp/ay/1l0D4k3ZLj9Epa5Dpd5Yb4IEjLZrjEsQWazML6e4R1NO27C8lFVq+OFMqwvE01Y7UH4Q9M61XCIjtMlWEqS9osjK3M0zeltjJotJ52GY7aP2IRNyfI6WbWzfaA1goRjT0lSWeUti2eFLCFHldcqHLwNhaE96V+e3ncqbQKNNuDuEQldlZ+pFH86q6xMKkgTxRCFCgp4ULKcuFFAmbX7f1Fyo6UpNkeQk/JJdmWi4VsGkLNZAe7QGiYgxAlyqrqQtoXmO6uTom6Lco952SDt4c9b9M8luswnw5MMDvcLjecprvR9W0AHKj+CdBfZiwvWkUn6qpDJbH8BjG+n784RC7DLq5dyOI7U3VHRnSgX+x2IU2mkwE7H8qBbX7f/gJQsxGsnDatEwAAAABJRU5ErkJggg=="/>
+		<image aria-label="BOX"  width="53" height="16" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAQBAMAAABEqSrGAAAAAXNSR0IB2cksfwAAADBQTFRFGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZVznDpwAAABB0Uk5TADNEEXequ+7/ZszdiJkiVYprtygAAAEuSURBVHicVVExS8NAFP5sas1BmwaXrFL8AdnsGBDBwcHJUZxicdOhZC3U5jWxmtFRcAl0FLF06iQFF+lQMkknEXFw7Oh7l1raB/d4333f++7dHbAS2y7WYvckoOa+VKp/EUvx6vuTwtT/4LIe4TucARsvCT5jGzAymqF+JXKzgyqNAKfFoHHJaZMecG4vuAKdwRi8M9iLOBlpr3iHBVekhNcOgwr9cnYoG+VcXBu3gRIJqJJ0K+rkg5rhUcrclubEnSOL3H9PxWpTc1bOjXW75tBosaet++QgdRN0l9xhG2Xy9EmicI7nob3kuuz2xKB0LXfou2V6zOdkz1vgvsdgLlsVfoBURPgiT+4HFZxCNWW+zNO7wEFAFMu74mfgD1mDN3qGlVGUrH6JVVv/oz9yiFmMuJXQmQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<use id="Aurora" href="#img1" x="0" y="0"/>
+	<use id="BOX" href="#img2" x="24" y="47"/>
+	<path id="Shape 2" class="s0" d="m17.5 56v-1h75v1z"/>
+	<path id="Shape 2 copy 3" class="s0" d="m17.5 29v-1h75v1z"/>
+</svg>

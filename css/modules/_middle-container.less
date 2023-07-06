@@ -1,0 +1,29 @@
+@import "../_variables.less"; 
+
+.middle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 10px; 
+}
+   
+.main-logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.main-logo-icon { 
+    width:184px;
+    height:64px;
+    background-image: url(../img/top-container-images/main-logo.svg);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: @xs) {
+ 
+    .main-logo-icon {
+        background-size: 150px;
+    }
+  }

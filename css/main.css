@@ -5,31 +5,38 @@ body {
   color: #000000;
   margin: 0px;
 }
-.top-container {
-  margin: 0 10px;
-}
 .container {
   margin: 0;
-  border-bottom: 1px solid #d7d7d7;
 }
 @media only screen and (min-width: 600px) {
-  .top-container {
-    margin: 0 80px;
+  .top-container,
+  .middle-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .bottom-line {
+    border-bottom: 1px solid #d7d7d7;
   }
 }
 @media only screen and (min-width: 768px) {
-  .top-container {
-    margin: 0 100px;
+  .top-container,
+  .middle-container {
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .top-container {
-    margin: 0 120px;
+  .top-container,
+  .middle-container {
+    margin-left: 140px;
+    margin-right: 140px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .top-container {
-    margin: 0 140px;
+  .top-container,
+  .middle-container {
+    margin-left: 160px;
+    margin-right: 160px;
   }
 }
 .top-container > div > div > div {
@@ -53,7 +60,10 @@ body {
 .user-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+}
+.user-container > div {
+  margin: 0 25px;
 }
 .contact-number-container,
 .contact-email-container,
@@ -95,10 +105,36 @@ body {
     border-left: 1px solid #d7d7d7;
     border-right: 1px solid #d7d7d7;
   }
+  .user-container > div {
+    margin: 0 0;
+  }
   .user-login-container {
     border-right: 1px solid #d7d7d7;
   }
   .contact-container {
     flex-direction: row;
+  }
+}
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 10px;
+}
+.main-logo-container {
+  display: flex;
+  align-items: center;
+}
+.main-logo-icon {
+  width: 184px;
+  height: 64px;
+  background-image: url(../img/top-container-images/main-logo.svg);
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 600px) {
+  .main-logo-icon {
+    background-size: 150px;
   }
 }
