@@ -1,0 +1,36 @@
+@import "../_variables.less";  
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+.contact-container,
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+@media only screen and (min-width: @xs) {
+    .top-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        order: 1;
+      }
+      .user-container {
+        justify-content: flex-end;
+        order: 3;
+      }
+
+      .mail {
+        margin-left:20px;
+      }
+}
