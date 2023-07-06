@@ -2,14 +2,17 @@
 
 .middle-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     margin: 25px 10px; 
 }
    
-.main-logo-container {
+.main-logo-container,
+.shopping-cart-container {
     display: flex;
     align-items: center; 
+    margin-top:10px;
 }
 
 .main-logo-icon { 
@@ -21,8 +24,19 @@
     background-repeat: no-repeat;
   }
 
+.shopping-cart-icon {
+    width:27px;
+    height:32px;
+    background-image: url(../img/top-container-images/basket-icon.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
   @media screen and (min-width: @xs) {
- 
+    .middle-container {
+        flex-direction: row;
+    }
     .main-logo-icon {
         background-size: 150px;
     }
